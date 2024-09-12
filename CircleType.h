@@ -109,14 +109,14 @@ double CircleType<T>::calcCircum()
 template <class T>
 void CircleType<T>::print()
 {
-	// Calculate radius, area, and circumference
 	double radius = calcRadius();
 	double area = calcArea();
-	double circumference = calcCircum();
+	double circum = calcCircum();
 
-	// Output the results
+	cout << "Calculating radius, area, and circumference..." << endl;
+
 	cout << fixed << setprecision(2);
 	cout << "Radius: " << radius << endl;
 	cout << "Area: " << area << endl;
-	cout << "Circumference: " << circumference << endl;
+	cout << "Circumference: " << circum << endl;
 }

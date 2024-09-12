@@ -9,19 +9,21 @@ using namespace std;
 
 int main()
 {
-    CircleType<int> Cir1;
+    CircleType<double> Cir1;
     Cir1.setCenterPoint(3, 7);
     Cir1.setCircumPoint(6, -2);
 
-    int x1, y1, x2, y2;
+    double x1, y1, x2, y2;
     Cir1.getCenterPoint(x1, y1);
     Cir1.getCircumPoint(x2, y2);
     cout << "The circle has the center points of: ";
-    cout << "(" << x1 << "," << y1 << ")" << endl;
+    cout << "(" << x1 << ", " << y1 << ")" << endl;
     cout << "It has the circumference points of: ";
-    cout << "(" << x2 << "," << y2 << ")" << endl;
+    cout << "(" << x2 << ", " << y2 << ")" << endl;
 
-    double radius = Cir1.calcRadius();
+    Cir1.print();
+
+    /*double radius = Cir1.calcRadius();
     double area = Cir1.calcArea();
     double circum = Cir1.calcCircum();
 
@@ -30,5 +32,5 @@ int main()
     cout << fixed << setprecision(2);
     cout << "Radius: " << radius << endl;
     cout << "Area: " << area << endl;
-    cout << "Circumference: " << circum << endl;
+    cout << "Circumference: " << circum << endl;*/
 }
