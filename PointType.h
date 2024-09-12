@@ -38,5 +38,3 @@ public:
 		cout << "(" << x << ", " << y  << ")" << endl;
 	}
 };
-
-//Hi test
