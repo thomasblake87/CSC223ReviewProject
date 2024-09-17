@@ -128,9 +128,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="CSC223ReviewProject.cpp" />
+    <ClCompile Include="CylinderType.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CircleType.h" />
+    <ClInclude Include="CylinderType.h" />
     <ClInclude Include="PointType.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

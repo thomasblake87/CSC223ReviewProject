@@ -17,8 +17,8 @@ public:
 	void setCircumPoint(T, T);
 
 	//Returns x and y coordinates of center and circumference points (not ordered pair)
-	void(getCenterPoint(T& xC, T& yC));
-	void(getCircumPoint(T& xC, T& yC));
+	PointType<T> getCenterPoint();
+	PointType<T> getCircumPoint();
 
 	//Prints the x and y coordinates of center and circumference points
 	void printCenterPoint();
@@ -63,17 +63,15 @@ void CircleType<T>::setCircumPoint(T xC, T yC)
 }
 
 template <class T>
-void CircleType<T>::getCenterPoint(T& xC, T& yC)
+PointType<T> CircleType<T>::getCenterPoint()
 {
-	xC = centerPoint.getX();
-	yC = centerPoint.getY();
+	return centerPoint;
 }
 
 template <class T>
-void CircleType<T>::getCircumPoint(T& xC, T& yC)
+PointType<T> CircleType<T>::getCircumPoint()
 {
-	xC = circumPoint.getX();
-	yC = circumPoint.getY();
+	return circumPoint;
 }
 
 template <class T>

@@ -18,12 +18,18 @@
     <ClCompile Include="CSC223ReviewProject.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="CylinderType.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PointType.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="CircleType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CylinderType.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
